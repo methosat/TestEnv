@@ -36,6 +36,7 @@ namespace TestGitIntegration1
 
             try
             {
+            	//test comment
                 error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
             }
             catch (Exception e)
