@@ -1,0 +1,16 @@
+﻿<testsuite
+name="TestGitIntegration2"
+rxversion="6.0.0.25531"
+id="f8938517-31e4-4eb2-81a2-5d7e2bccbd92">
+  <content>
+    <testcase name="TestCase" id="76408e0a-faf7-4b32-8c93-d1bb3ff903fb">
+      <testmodule name="Recording1" id="bc0b9038-e1a6-4f98-906a-a0cb1aa7c865" ref="966367da-ab45-4b38-b3b3-5bc9e84d7fb0" type="Recording"/>
+    </testcase>
+  </content>
+  <testconfigurations default="TestRun">
+    <testconfiguration name="TestRun">
+      <testcase id="76408e0a-faf7-4b32-8c93-d1bb3ff903fb"/>
+    </testconfiguration>
+  </testconfigurations>
+  <references/>
+</testsuite>

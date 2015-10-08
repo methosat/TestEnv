@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DDD11F63-8A67-49C2-A63E-9B7594373C23}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestGitIntegration2</RootNamespace>
+    <AssemblyName>TestGitIntegration2</AssemblyName>
+    <RanorexVersion>6</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>22c8352d-05c7-4182-8316-72372b6ffff7</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>097ec91c-ac10-443b-b419-fc2f76cd40bc</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>75869e66-658a-431a-ab04-a9e965b4860a</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>720afe01-4a93-4d1d-8523-0278e44b71d6</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bba4148f-8944-40bc-88b4-35395313ce72</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>720afe01-4a93-4d1d-8523-0278e44b71d6</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69c3543d-fd02-4204-8ef2-5964da89555b</id>
+    </Compile>
+    <Compile Include="TestGitIntegration2Repository.cs">
+      <BoundTo>22c8352d-05c7-4182-8316-72372b6ffff7</BoundTo>
+      <DependentUpon>TestGitIntegration2Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>83d1ec74-2148-4a9f-b1f8-c7c84e2249e9</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>e5050c2b-f379-420d-892a-857c38fe24c6</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>22c8352d-05c7-4182-8316-72372b6ffff7</BoundTo>
+      <id>720afe01-4a93-4d1d-8523-0278e44b71d6</id>
+      <recordtableid>966367da-ab45-4b38-b3b3-5bc9e84d7fb0</recordtableid>
+    </None>
+    <None Include="TestGitIntegration2Repository.rximg">
+      <BoundTo>22c8352d-05c7-4182-8316-72372b6ffff7</BoundTo>
+      <DependentUpon>TestGitIntegration2Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>63571a1b-e03b-4a73-b327-557a057d1f1d</id>
+    </None>
+    <None Include="TestGitIntegration2Repository.rxrep">
+      <id>22c8352d-05c7-4182-8316-72372b6ffff7</id>
+      <repoid>b42e91bf-656b-42e7-855b-90a4eb259537</repoid>
+      <reporootid>b1626361-ff24-4147-82d9-1bdfdb5e31f4</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestGitIntegration2.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8f87ee6c-806e-42e4-ab7d-3b723014bca5</id>
+    </Content>
+    <Content Include="TestGitIntegration2.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a5cb3d25-1c4d-4c4b-8958-88d28e99d0e1</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+</Project>
