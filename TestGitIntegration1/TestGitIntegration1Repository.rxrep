@@ -1,0 +1,18 @@
+﻿<repository
+name="TestGitIntegration1Repository"
+id="79ca9a1c-d6cb-4e31-9f91-0bc1afeb862c"
+rxversion="6.0.0.25822">
+  <codegen
+  classname="TestGitIntegration1Repository"
+  namespace="TestGitIntegration1"/>
+  <rootfolder
+  name="Root"
+  id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
