@@ -26,6 +26,7 @@ namespace TestGitIntegration1
         [STAThread]
         public static int Main(string[] args)
         {
+        	// dfjdkfjdkdfj
             // Uncomment the following 2 lines if you want to automate Windows apps
             // by starting the test executable directly
             //if (Util.IsRestartRequiredForWinAppAccess)

@@ -87,6 +87,9 @@
       <RepositoryCode>true</RepositoryCode>
       <id>f055c9a2-68cd-4e1e-bcf9-c749138a1783</id>
     </Compile>
+    <Compile Include="UserCodeModule1.cs">
+      <id>1f1a7d9e-1667-4b97-a9f4-4abb9b76cb10</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
