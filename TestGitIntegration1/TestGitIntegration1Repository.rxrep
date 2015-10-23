@@ -1,18 +1,55 @@
 ﻿<repository
 name="TestGitIntegration1Repository"
 id="79ca9a1c-d6cb-4e31-9f91-0bc1afeb862c"
-rxversion="6.0.0.25822">
-  <codegen
-  classname="TestGitIntegration1Repository"
-  namespace="TestGitIntegration1"/>
-  <rootfolder
-  name="Root"
-  id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+rxversion="6.0.0.26123">
+	<codegen
+	classname="TestGitIntegration1Repository"
+	namespace="TestGitIntegration1"/>
+	<rootfolder
+	name="Root"
+	id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="Explorer"
+		id="465033ac-4b94-42e3-af62-05115e73397e"
+		searchtimeout="30000ms"
+		capname="desktop"
+		refpath="/desktop[@processname='explorer']"
+		addcaps="desktop,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ListItemBin"
+			id="abb137a5-0f7c-40c7-9409-198c85a8e5fc"
+			searchtimeout="30000ms"
+			capname="listitem"
+			refpath="/desktop[@processname='explorer']/container[@class='SHELLDLL_DefView']/list[@controlid='1']/listitem[@text='bin']"
+			addcaps="listitem,nativeitem,checkable"
+			refimgid="7206e512-a97b-45ba-a076-8d7e7c4dbd12">
+				/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text='bin']
+			</item>
+			<basepath>
+				/desktop[@processname='explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACBElEQVQ4T4WSUWgScRzHHfQcLPZcL0EQFNtTQU9FRUHSXhaTRbBA
+ixBRiIhAMIz2JERgT0bI1ALZy6BCyY0RMtuZeqPi0hlUE0JcyZXV7S6/u9/vdnezC/rDB/7c///5
+8L//net/43TmG/6m2Wxie9kYC8I6Xjc7eLL0wbH50aqMWVHm+Y2ChiMz7xGPx+3IgduStZnmmUoX
+i1IX6GsOaA8FQqEQRFG0A/kNsNzXflhQ5Pi8yhy7Vbae/zPAstphRmd/WWJvE2jJMAL6GsnEg/17
+kcvl7EDtUwv9zS8MBWiY8pp+OlMst4C3F/dBvnsYubFhFItFcOCP8tGCAor+yiQTJL5aB8sZ0bhE
+kj0eD5LJ5Hbg95oFBUz5/p1plu+97FmnGLpShtvtRjgctk/Q2XgD7aeBGRjZPcSYIkHrFPB6vYN3
+UFit6os1hgJ03J3QJZrrFHB8hReiALW3wlBg+bMtmpBM/4gjsGfqGQq1ZWjfi8xOSf363ILl8aeM
+I0CU3y1ClRegdnWB0KXRm0sDHDpxFecnLiMWi6HRaNiBXWfnMHzusUM4euoSJqem4ff7EQwGEYlE
+kEqlUKlUIMuyEZhJreDghYcYO3MdJ8evwefzIRAI8DGj0Siy2SxKpRKq1SokSUK73YaiKIZsjnw+
+j0QigXQ6DZoLgsDvWK/XBzc6hsu1BRMfpP7Bj/TsAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

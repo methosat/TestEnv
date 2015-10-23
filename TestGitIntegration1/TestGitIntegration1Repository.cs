@@ -27,6 +27,7 @@ namespace TestGitIntegration1
     public partial class TestGitIntegration1Repository : RepoGenBaseFolder
     {
         static TestGitIntegration1Repository instance = new TestGitIntegration1Repository();
+        TestGitIntegration1RepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the TestGitIntegration1Repository element repository.
@@ -43,6 +44,7 @@ namespace TestGitIntegration1
         public TestGitIntegration1Repository() 
             : base("TestGitIntegration1Repository", "/", null, 0, false, "331c7386-f98b-4f51-bb26-d5a0c8db9de0", ".\\RepositoryImages\\TestGitIntegration1Repository331c7386.rximgres")
         {
+            _explorer = new TestGitIntegration1RepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace TestGitIntegration1
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("465033ac-4b94-42e3-af62-05115e73397e")]
+        public virtual TestGitIntegration1RepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace TestGitIntegration1
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.0.0")]
     public partial class TestGitIntegration1RepositoryFolders
     {
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("465033ac-4b94-42e3-af62-05115e73397e")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _listitembinInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/desktop[@processname='explorer']", parentFolder, 30000, null, true, "465033ac-4b94-42e3-af62-05115e73397e", "")
+            {
+                _listitembinInfo = new RepoItemInfo(this, "ListItemBin", "?/?/list[@controlid='1']/listitem[@text='bin']", 30000, null, "abb137a5-0f7c-40c7-9409-198c85a8e5fc");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("465033ac-4b94-42e3-af62-05115e73397e")]
+            public virtual Ranorex.Desktop Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Desktop>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("465033ac-4b94-42e3-af62-05115e73397e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItemBin item.
+            /// </summary>
+            [RepositoryItem("abb137a5-0f7c-40c7-9409-198c85a8e5fc")]
+            public virtual Ranorex.ListItem ListItemBin
+            {
+                get
+                {
+                    return _listitembinInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItemBin item info.
+            /// </summary>
+            [RepositoryItemInfo("abb137a5-0f7c-40c7-9409-198c85a8e5fc")]
+            public virtual RepoItemInfo ListItemBinInfo
+            {
+                get
+                {
+                    return _listitembinInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
