@@ -1,16 +1,36 @@
 ﻿<testsuite
 name="TestGitIntegration1"
-rxversion="6.0.0.25822"
-id="7105bb38-4217-410a-a948-538624a94228">
-  <content>
-    <testcase name="TestCase" id="651966f7-8207-4724-a169-0d04a8a9bc3e">
-      <testmodule name="Recording1" id="ad406ef6-c871-44c9-a6b0-7ed676f6d6ea" ref="79cec15a-788b-4218-a085-c927617b7ccc" type="Recording"/>
-    </testcase>
-  </content>
-  <testconfigurations default="TestRun">
-    <testconfiguration name="TestRun">
-      <testcase id="651966f7-8207-4724-a169-0d04a8a9bc3e"/>
-    </testconfiguration>
-  </testconfigurations>
-  <references/>
+rxversion="6.0.0.26123"
+id="7105bb38-4217-410a-a948-538624a94228"
+reportfilename="%S_%Y%M%D_%T.rxlog"
+reporttemplatefolder=""
+reportxslfilename=""
+placescreenshotsinfolder="True"
+ReportTime="RelativeToTestSuiteStartTime"
+reportwriteinterval="30000ms"
+reportcompress="False"
+enabletracingscreenshots="True"
+TracingScreenshotMode="Foreground"
+TracingScreenshotQuality="40"
+reportlevel="Info;20">
+	<content>
+		<testcase
+		name="TestCase"
+		id="651966f7-8207-4724-a169-0d04a8a9bc3e">
+			<testmodule
+			name="Recording1Renamed"
+			id="ad406ef6-c871-44c9-a6b0-7ed676f6d6ea"
+			ref="79cec15a-788b-4218-a085-c927617b7ccc"
+			type="Recording"/>
+		</testcase>
+	</content>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="651966f7-8207-4724-a169-0d04a8a9bc3e"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references/>
 </testsuite>

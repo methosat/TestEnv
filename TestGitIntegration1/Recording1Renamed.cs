@@ -24,29 +24,29 @@ namespace TestGitIntegration1
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The Recording1Renamed recording.
     /// </summary>
     [TestModule("79cec15a-788b-4218-a085-c927617b7ccc", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class Recording1Renamed : ITestModule
     {
         /// <summary>
         /// Holds an instance of the TestGitIntegration1Repository repository.
         /// </summary>
         public static TestGitIntegration1Repository repo = TestGitIntegration1Repository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static Recording1Renamed instance = new Recording1Renamed();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public Recording1Renamed()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static Recording1Renamed Instance
         {
             get { return instance; }
         }
