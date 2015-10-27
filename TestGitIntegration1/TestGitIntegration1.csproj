@@ -66,6 +66,9 @@
     <Compile Include="AssemblyInfo.cs">
       <id>7d729ec4-da84-4c7d-8aaa-9597bee8e1e2</id>
     </Compile>
+    <Compile Include="Class1.cs">
+      <id>671d138e-2749-4e24-b00c-aae412a87698</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>697020d4-dac0-4a63-88f2-8e255f7f3d1a</id>
     </Compile>
