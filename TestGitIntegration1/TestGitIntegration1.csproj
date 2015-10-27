@@ -69,15 +69,15 @@
     <Compile Include="Program.cs">
       <id>697020d4-dac0-4a63-88f2-8e255f7f3d1a</id>
     </Compile>
-    <Compile Include="Recording1Renamed.cs">
+    <Compile Include="Recording1Rena.cs">
       <BoundTo>36359a5f-7061-4935-9b22-1e54ece1b002</BoundTo>
-      <DependentUpon>Recording1Renamed.rxrec</DependentUpon>
+      <DependentUpon>Recording1Rena.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f4c32758-0f6b-416b-be2e-542b261d1f98</id>
     </Compile>
-    <Compile Include="Recording1Renamed.UserCode.cs">
+    <Compile Include="Recording1Rena.UserCode.cs">
       <BoundTo>36359a5f-7061-4935-9b22-1e54ece1b002</BoundTo>
-      <DependentUpon>Recording1Renamed.rxrec</DependentUpon>
+      <DependentUpon>Recording1Rena.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b1499375-9049-43d5-842e-ed8fbe982a1a</id>
     </Compile>
@@ -95,7 +95,7 @@
     <None Include="app.config">
       <id>b7ef224c-012e-4322-8641-99457e5dc93c</id>
     </None>
-    <None Include="Recording1Renamed.rxrec">
+    <None Include="Recording1Rena.rxrec">
       <BoundTo>284e9063-1075-4089-b5c5-c4606ae13f83</BoundTo>
       <id>36359a5f-7061-4935-9b22-1e54ece1b002</id>
       <recordtableid>79cec15a-788b-4218-a085-c927617b7ccc</recordtableid>
