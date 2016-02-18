@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-rxversion="6.0.0.26123"
+rxversion="6.0.0.0"
 id="79cec15a-788b-4218-a085-c927617b7ccc"
 embeddedrepository="false"
 mode="Global">
@@ -30,7 +30,7 @@ mode="Global">
 	<repository
 	name="TestGitIntegration1Repository"
 	id="79ca9a1c-d6cb-4e31-9f91-0bc1afeb862c"
-	rxversion="6.0.0.26123"
+	rxversion="6.0.0.0"
 	relativepath="TestGitIntegration1Repository.rxrep">
 		<codegen
 		classname="TestGitIntegration1Repository"

@@ -1,7 +1,7 @@
 ﻿<repository
 name="TestGitIntegration1Repository"
 id="79ca9a1c-d6cb-4e31-9f91-0bc1afeb862c"
-rxversion="6.0.0.26123">
+rxversion="6.0.0.0">
 	<codegen
 	classname="TestGitIntegration1Repository"
 	namespace="TestGitIntegration1"/>
