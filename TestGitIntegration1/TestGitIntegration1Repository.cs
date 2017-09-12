@@ -27,7 +27,7 @@ namespace TestGitIntegration1
     public partial class TestGitIntegration1Repository : RepoGenBaseFolder
     {
         static TestGitIntegration1Repository instance = new TestGitIntegration1Repository();
-        TestGitIntegration1RepositoryFolders.Explorer123AppFolder _explorer123;
+        TestGitIntegration1RepositoryFolders.ExplorAppFolder _explor;
 
         /// <summary>
         /// Gets the singleton class instance representing the TestGitIntegration1Repository element repository.
@@ -44,7 +44,7 @@ namespace TestGitIntegration1
         public TestGitIntegration1Repository() 
             : base("TestGitIntegration1Repository", "/", null, 0, false, "331c7386-f98b-4f51-bb26-d5a0c8db9de0", ".\\RepositoryImages\\TestGitIntegration1Repository331c7386.rximgres")
         {
-            _explorer123 = new TestGitIntegration1RepositoryFolders.Explorer123AppFolder(this);
+            _explor = new TestGitIntegration1RepositoryFolders.ExplorAppFolder(this);
         }
 
 #region Variables
@@ -64,12 +64,12 @@ namespace TestGitIntegration1
         }
 
         /// <summary>
-        /// The Explorer123 folder.
+        /// The Explor folder.
         /// </summary>
         [RepositoryFolder("465033ac-4b94-42e3-af62-05115e73397e")]
-        public virtual TestGitIntegration1RepositoryFolders.Explorer123AppFolder Explorer123
+        public virtual TestGitIntegration1RepositoryFolders.ExplorAppFolder Explor
         {
-            get { return _explorer123; }
+            get { return _explor; }
         }
     }
 
@@ -80,18 +80,18 @@ namespace TestGitIntegration1
     public partial class TestGitIntegration1RepositoryFolders
     {
         /// <summary>
-        /// The Explorer123AppFolder folder.
+        /// The ExplorAppFolder folder.
         /// </summary>
         [RepositoryFolder("465033ac-4b94-42e3-af62-05115e73397e")]
-        public partial class Explorer123AppFolder : RepoGenBaseFolder
+        public partial class ExplorAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _listitembinInfo;
 
             /// <summary>
-            /// Creates a new Explorer123  folder.
+            /// Creates a new Explor  folder.
             /// </summary>
-            public Explorer123AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer123", "/desktop[@processname='explorer']", parentFolder, 30000, null, true, "465033ac-4b94-42e3-af62-05115e73397e", "")
+            public ExplorAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explor", "/desktop[@processname='explorer']", parentFolder, 30000, null, true, "465033ac-4b94-42e3-af62-05115e73397e", "")
             {
                 _listitembinInfo = new RepoItemInfo(this, "ListItemBin", "?/?/list[@controlid='1']/listitem[@text='bin']", 30000, null, "abb137a5-0f7c-40c7-9409-198c85a8e5fc");
             }
