@@ -22,7 +22,7 @@ namespace TestGitIntegration1
     /// <summary>
     /// The class representing the TestGitIntegration1Repository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.0.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
     [RepositoryFolder("331c7386-f98b-4f51-bb26-d5a0c8db9de0")]
     public partial class TestGitIntegration1Repository : RepoGenBaseFolder
     {
@@ -76,7 +76,7 @@ namespace TestGitIntegration1
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.0.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
     public partial class TestGitIntegration1RepositoryFolders
     {
         /// <summary>

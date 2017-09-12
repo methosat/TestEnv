@@ -7,9 +7,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TestGitIntegration1</RootNamespace>
     <AssemblyName>TestGitIntegration1</AssemblyName>
-    <RanorexVersion>6</RanorexVersion>
+    <RanorexVersion>7.1</RanorexVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <projectdefaultrepository>284e9063-1075-4089-b5c5-c4606ae13f83</projectdefaultrepository>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -31,22 +32,24 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
-    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -126,5 +129,5 @@
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
 </Project>

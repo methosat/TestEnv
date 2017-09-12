@@ -1,34 +1,36 @@
-﻿<repository
-name="TestGitIntegration1Repository"
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="79ca9a1c-d6cb-4e31-9f91-0bc1afeb862c"
-rxversion="6.0.0.0">
+name="TestGitIntegration1Repository"
+rxversion="7.1">
 	<codegen
 	classname="TestGitIntegration1Repository"
-	namespace="TestGitIntegration1"/>
+	namespace="TestGitIntegration1">
+	</codegen>
 	<rootfolder
-	name="Root"
-	id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"
-	searchtimeout="0ms"
 	capname="unknown"
+	id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"
 	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
 	usecache="True">
 		<appfolder
-		name="Explorer"
-		id="465033ac-4b94-42e3-af62-05115e73397e"
-		searchtimeout="30000ms"
-		capname="desktop"
-		refpath="/desktop[@processname='explorer']"
 		addcaps="desktop,nativewindow"
+		capname="desktop"
+		id="465033ac-4b94-42e3-af62-05115e73397e"
 		isrooted="True"
+		name="Explorer"
+		refpath="/desktop[@processname='explorer']"
+		searchtimeout="30000ms"
 		usecache="True">
 			<item
-			name="ListItemBin"
-			id="abb137a5-0f7c-40c7-9409-198c85a8e5fc"
-			searchtimeout="30000ms"
-			capname="listitem"
-			refpath="/desktop[@processname='explorer']/container[@class='SHELLDLL_DefView']/list[@controlid='1']/listitem[@text='bin']"
 			addcaps="listitem,nativeitem,checkable"
-			refimgid="7206e512-a97b-45ba-a076-8d7e7c4dbd12">
+			capname="listitem"
+			id="abb137a5-0f7c-40c7-9409-198c85a8e5fc"
+			name="ListItemBin"
+			refimgid="7206e512-a97b-45ba-a076-8d7e7c4dbd12"
+			refpath="/desktop[@processname='explorer']/container[@class='SHELLDLL_DefView']/list[@controlid='1']/listitem[@text='bin']"
+			searchtimeout="30000ms">
 				/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text='bin']
 			</item>
 			<basepath>
@@ -49,7 +51,9 @@ kEqlUKlUIMuyEZhJreDghYcYO3MdJ8evwefzIRAI8DGj0Siy2SxKpRKq1SokSUK73YaiKIZsjnw+
 j0QigXQ6DZoLgsDvWK/XBzc6hsu1BRMfpP7Bj/TsAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
-		<basepath/>
+		<basepath>
+		</basepath>
 	</rootfolder>
-	<variables/>
+	<variables>
+	</variables>
 </repository>

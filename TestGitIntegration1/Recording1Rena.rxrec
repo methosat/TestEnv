@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-rxversion="6.0.0.0"
-id="79cec15a-788b-4218-a085-c927617b7ccc"
 embeddedrepository="false"
-mode="Global">
+id="79cec15a-788b-4218-a085-c927617b7ccc"
+mode="Global"
+rxversion="7.1">
 	<name>
 		Recording1Rena
 	</name>
@@ -24,24 +24,30 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Recording1Rena"
-	namespace="TestGitIntegration1"/>
-	<variables/>
-	<recorditems/>
+	namespace="TestGitIntegration1">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
 	<repository
-	name="TestGitIntegration1Repository"
 	id="79ca9a1c-d6cb-4e31-9f91-0bc1afeb862c"
-	rxversion="6.0.0.0"
-	relativepath="TestGitIntegration1Repository.rxrep">
+	name="TestGitIntegration1Repository"
+	relativepath="TestGitIntegration1Repository.rxrep"
+	rxversion="6.0.0.0">
 		<codegen
 		classname="TestGitIntegration1Repository"
-		namespace="TestGitIntegration1"/>
+		namespace="TestGitIntegration1">
+		</codegen>
 		<rootfolder
-		name="_rootdummy_"
-		id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"/>
+		id="331c7386-f98b-4f51-bb26-d5a0c8db9de0"
+		name="_rootdummy_">
+		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
 		Recording1Rena.UserCode.cs
 	</usercodefile>
-	<references/>
+	<references>
+	</references>
 </recordtable>

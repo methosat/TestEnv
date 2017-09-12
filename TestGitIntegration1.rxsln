@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-# SharpDevelop 3.1
+# Ranorex Studio 7.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGitIntegration1", "TestGitIntegration1\TestGitIntegration1.csproj", "{7F484E42-2C8A-4B5C-A8D7-E117DC920108}"
 EndProject
 Global
